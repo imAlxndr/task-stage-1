@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div>
+                <label for="name">ФИО</label>
+                <input id="name" name="name" type="text" placeholder="ФИО" value="">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" class="input" type="email" placeholder="Email" disabled>
+            </div>
+                
+            <div>
+                <label for="phone">Телефон</label>
+                <input id="phone" name="phone" class="input" type="tel" placeholder="Телефон" readonly>
+            </div>
+                
+            <div>
+                <label for="quantity">Количество</label>
+                <input id="quantity" name="quantity" class="input" type="number" placeholder="Количество">
+            </div>
+                
+            <div>
+                <label for="password">Пароль</label>
+                <input id="password" name="password" class="input" type="password" placeholder="Пароль">
+            </div>
+                
+            <div>
+                <label for="upload">Загрузить файл</label>
+                <input id="upload" name="upload" class="input" type="file">
+            </div>
+                
+            <div>
+                <label for="dob">Дата рождения</label>
+                <input id="dob" name="dob" class="input" type="date">
+            </div>
+                
+            <div>
+                <label for="color">Цвет</label>
+                <input id="color" name="color" class="input" type="color">
+            </div>
+                
+            <div>
+                <input id="terms" name="terms" type="checkbox">
+                <label for="terms">Согласен с условиями</label>
+            </div>
+                
+            <div>
+                <input id="option1" name="options" type="radio" value="option1">
+                <label for="option1">Опция 1</label>
+                
+                <input id="option2" name="options" type="radio" value="option2">
+                <label for="option2">Опция 2</label>
+            </div>
+                
+            <div>
+                <label for="comments">Комментарий</label>
+                <textarea id="comments" name="comments" class="textarea" placeholder="Комментарий"></textarea>
+            </div>
+                
+            <div>
+                <label for="country">Страна</label>
+                <select id="country" name="country">
+                    <option value="Russia">Россия</option>
+                    <option value="USA">США</option>
+                    <option value="UK">Великобритания</option>
+                </select>
+            </div>
+                
+            <div>
+                <label for="genres">Любимые жанры</label>
+                <select id="genres" name="genres" multiple>
+                    <option value="action">Боевики</option>
+                    <option value="comedy">Комедии</option>
+                    <option value="drama">Драмы</option>
+                    <option value="horror">Ужасы</option>
+                </select>
+            </div>
+                
+            <div>
+                <input id="hiddenInput" type="hidden" value="hidden">
+            </div>
+                
+            <div>
+                <label for="username">Имя пользователя <span style="color: red;">*</span></label>
+                <input id="username" name="username" class="input" type="text" placeholder="Имя пользователя" required>
+            </div>
+
+            <!-- по умолчанию type="submit" -->
+            <button>Отправить</button>
+        </form>
+    </div>
+</body>
+</html>
