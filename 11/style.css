@@ -26,14 +26,7 @@ img {
   height: auto;
 }
 
-
-.truncate{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.container{
+.container {
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
@@ -47,4 +40,57 @@ img {
 table{
     width: 100%;
     border-collapse: collapse;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.heading-1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.5px;
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+.heading-2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #007BFF;
+}
+
+.heading-3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #28A745;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a[target="_blank"]::after {
+  content: ' (в новой вкладке)';
+}
+
+.you {
+  font-weight: bold;
+  text-decoration: underline;
 }
