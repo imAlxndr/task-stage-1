@@ -69,6 +69,7 @@ img {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
+    position: relative;
 }
 .item2__name{
     margin-bottom: 10px;
@@ -77,12 +78,19 @@ img {
 .item2__content{
     margin-bottom: 10px;
     font-size: 14px;
+    margin-bottom: 50px; 
+    flex-grow: 1;
 }
 .item2__footer{
     background-color: black;
     color: white;
     padding: 5px;
     text-align: center;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
 }
 .item2__bg{
     height: 150px;
@@ -90,4 +98,7 @@ img {
 }
 .item2__body{
     padding: 10px;
+    flex-grow: 1;
+    position: relative;
+    box-sizing: border-box;
 }
