@@ -25,9 +25,11 @@
         }
 
         .header{
+            position: fixed;
             text-align: center;
             background-color: cadetblue;
             padding: 10px;
+            z-index: 1;
         }
 
 
@@ -39,6 +41,12 @@
         .chars-block__header{
             padding: 10px;
             background-color: aquamarine;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        .chars-block p::first-letter {
+            text-transform: uppercase; 
         }
     </style>
 </head>
