@@ -14,6 +14,10 @@
         }
         h1{
             margin: 0;
+            color: white;
+        }
+        p{
+            color: white;
         }
         img {
             display: block;
@@ -29,6 +33,7 @@
         }
 
         .banner{
+            position: relative;
             border: 1px solid red;
             padding: 20px;
         }
@@ -40,10 +45,18 @@
         }
 
         .banner__content{
-
+            background-color: black;
+            color: #000;
+            padding: 20px 10px 15px 10px;
+            width: 70%;
+            z-index: 2;
+            position: relative;
         }
         .banner__media{
-
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
         }
     </style>
 </head>
