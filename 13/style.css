@@ -16,6 +16,8 @@ html{
 img {
     max-width: 100%;
     height: auto;
+    object-fit: contain;
+    height: auto;
 }
 
 .container{
@@ -39,7 +41,13 @@ img {
     display: flex;
     gap: 10px;
 }
+.block svg {
+    margin-right: 10px;
+}
+
 .col-1 {
+    width: 300px;
+    flex-shrink: 0;
     background-color: #e6e6e6;
     border: 1px solid red;
     padding: 4px;
