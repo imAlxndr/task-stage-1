@@ -29,4 +29,38 @@ body{
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+    padding: 20px;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #374151;
+}
+
+.breadcrumbs__item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>');
+    margin: 0 8px;
+    color: #6B7280;
+}
+
+.breadcrumbs__link {
+    color: #2563EB;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumbs__link:hover {
+    color: #1D4ED8;
+}
+
+.breadcrumbs__item--active {
+    font-weight: 700;
+    color: #111827;
 }
