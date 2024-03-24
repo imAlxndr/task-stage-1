@@ -8,12 +8,41 @@
 
     <style>
     .task-list {
-
+        counter-reset: task-counter;
     }
 
     .task-list__item {
         margin-bottom: 10px;
         padding: 20px;
+        counter-increment: task-counter;
+    }
+
+    .task-list__item::before {
+        content: counter(task-counter) ". "; 
+        margin-right: 10px;
+    }
+
+    .task-list__item:nth-child(3) {
+        counter-increment: task-counter 3;
+    }
+
+    .task-list__item:nth-child(2n) {
+        background-color: #f2f2f2;
+    }
+
+    .list-mark__item {
+        margin-bottom: 10px;
+        padding: 20px;
+        left: 27px;
+        position: relative; 
+    }
+
+    .list-mark__item::before {
+        content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>');
+        position: absolute;
+        margin: -5px 0;
+        color: #6B7280;
+        left: -20px; 
     }
 
     </style>
