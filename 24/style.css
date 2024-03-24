@@ -90,11 +90,40 @@ body{
 
 .gallery{
     display: grid;
-    grid-template-columns: repeat(9, minmax(0, 1fr));
+    grid-template-columns: 1fr;
     gap: 20px;
-    padding: 0 100px;
+    padding: 0 16px;
 }
 .gallery__item{
     height: 200px;
     background-color: beige;
+}
+
+/* ширина экрана >= 576px */
+@media (min-width: 576px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/* ширина экрана >= 768px */
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+/* ширина экрана >= 1024px */
+@media (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr); 
+        padding: 0 32px; 
+    }
+}
+
+/* ширина экрана >= 1292px */
+@media (min-width: 1292px) {
+    .gallery {
+        grid-template-columns: repeat(6, 1fr); 
+    }
 }

@@ -96,3 +96,41 @@ body{
     height: 200px;
     background-color: beige;
 }
+
+/* ширина экрана <= 1292px */
+@media (max-width: 1291px) {
+    .gallery {
+        grid-template-columns: repeat(6, 1fr); /* Шесть колонок */
+    }
+}
+
+/* ширина экрана <= 1024px */
+@media (max-width: 1023px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr); /* Четыре колонки */
+        padding: 0 50px; /* Уменьшаем отступы */
+    }
+}
+
+/* ширина экрана <= 768px */
+@media (max-width: 767px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* Три колонки */
+    }
+}
+
+/* ширина экрана <= 576px */
+@media (max-width: 575px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Две колонки */
+        padding: 0 20px; /* Ещё меньше отступы */
+    }
+}
+
+/* ширина экрана <= 480px */
+@media (max-width: 479px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Одна колонка для самых маленьких экранов */
+        padding: 0 10px; /* Минимальные отступы */
+    }
+}
