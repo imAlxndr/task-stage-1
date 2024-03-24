@@ -51,64 +51,18 @@
 
         .box__front,
         .box__back{
-            display: flex; 
-            gap: 20px;
-            /* position: relative; */
+            display: flex;
+            gap: 10px;
+            /* here */
         }
 
         .box__column{
-            flex: 1;
-            min-height: 120px; 
-            position: relative;
-            z-index: 2;         
+            /* here */
         }
 
         .box__column--bg1{
             background-color: #607D8B;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: calc(50% - 20px);
-            height: calc(100% - 20px);
-            margin-right: 20px;
-            margin-bottom: 20px;
-            z-index: 1;
         }
-
-        .content{
-            position: relative;
-            z-index: 3; 
-            background: red; 
-            font-size: 18px; 
-            padding: 10px 0 10px 10px;
-        }
-
-        .box__back{
-            position: absolute; 
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 0; 
-        }
-
-        .box__back .box__column{
-            flex: 1; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-        }
-
-        .box__back .box__column img{
-            max-width: 100%; 
-            max-height: 100%; 
-            width: auto; 
-            height: auto;
-            /* margin-top: 20px; */
-            /* margin-left: 20px; */
-        }
-
-
 
     </style>
 </head>
